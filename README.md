@@ -4,7 +4,7 @@ This is a clean, responsive To-Do List application built with **React**, using *
 
 ## 🚀 Live Demo
 
-[Click here to view the deployed app](https://your-netlify-link.netlify.app)
+[[Click here to view the deployed app](https://spanglestodowithusereducer.netlify.app/)]
 
 ## 📦 Features
 
