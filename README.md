@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 📝 React To-Do List App with useReducer, Bootstrap, and Toasts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a clean, responsive To-Do List application built with **React**, using **useReducer** for state management and styled with **Bootstrap 5**. It also includes **react-toastify** for toast notifications on all key actions.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+[Click here to view the deployed app](https://your-netlify-link.netlify.app)
 
-### `npm start`
+## 📦 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✅ Core Functionalities
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Add a To-Do**
+  - Enter text and hit "Add"
+  - Validates empty inputs and shows error message if blank
 
-### `npm test`
+- **Edit a To-Do**
+  - Click "Edit", update the text, and hit "Save"
+  - Uses toast to confirm successful update
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Delete a To-Do**
+  - Instantly remove a To-Do from the list
+  - Shows toast notification on deletion
 
-### `npm run build`
+- **Toggle Completion**
+  - Click the text to mark it as complete/incomplete
+  - Line-through style and toast confirms status change
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛠️ State Management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Uses **`useReducer`** to manage To-Do list actions:
+  - `ADD_TODO`
+  - `DELETE_TODO`
+  - `TOGGLE_TODO`
+  - `EDIT_TODO`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 💄 UI Styling
 
-### `npm run eject`
+- Bootstrap 5 for responsive, clean UI
+- Custom shadows, spacing, and radius using Bootstrap utility classes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔔 Toast Notifications
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `react-toastify` integrated for alerts:
+  - On adding, editing, deleting, and toggling todos
+  - Positioned at top-center with auto-dismiss
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🗂️ Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+client/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── TodoForm.js
+│ │ ├── TodoItem.js
+│ │ └── TodoList.js
+│ ├── reducer/
+│ │ └── todoReducer.js
+│ ├── App.js
+│ ├── App.css
+│ └── index.js
+└── README.md 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧩 Libraries Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React
+- Bootstrap
+- React Toastify
 
-### Code Splitting
+## 🛠️ Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd client
+npm install
+npm start
 
-### Analyzing the Bundle Size
+🚀 Deployment
+Frontend deployed to Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Build with:
 
-### Making a Progressive Web App
+bash
+Copy
+Edit
+npm run build
+Drag the /build folder into Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🤝 Author
+Sridhar R.
+GitHub: @Sridharraj2023
