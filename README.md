@@ -49,16 +49,20 @@ This is a clean, responsive To-Do List application built with **React**, using *
 
 client/
 ├── public/
+
 ├── src/
+
 │ ├── components/
 │ │ ├── TodoForm.js
 │ │ ├── TodoItem.js
 │ │ └── TodoList.js
 │ ├── reducer/
 │ │ └── todoReducer.js
+
 │ ├── App.js
 │ ├── App.css
 │ └── index.js
+
 └── README.md 
 
 
